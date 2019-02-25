@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPurple"
+    android:orientation="vertical"
+    tools:context=".hw1.Hw1Activity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="130dp"
+        android:background="@color/colorGreen"
+        android:clickable="true"
+        android:text="@string/textView1"
+        android:textColor="@color/colorBlack"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="230dp"
+        android:background="@color/colorYellow"
+        android:clickable="true"
+        android:text="@string/textView2"
+        android:textColor="@color/colorBlack"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="400dp"
+        android:background="@color/colorGray"
+        android:text="@string/button"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp" />
+
+</RelativeLayout>
