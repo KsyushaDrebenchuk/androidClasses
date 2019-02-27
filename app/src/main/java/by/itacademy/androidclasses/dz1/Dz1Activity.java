@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Hw1Activity extends Activity implements View.OnClickListener {
+public class Dz1Activity extends Activity implements View.OnClickListener {
 
     private TextView textView1;
     private TextView textView2;
@@ -16,7 +16,7 @@ public class Hw1Activity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hw1);
+        setContentView(R.layout.activity_dz1);
 
         textView1 = findViewById(R.id.textView1);
         textView2 = findViewById(R.id.textView2);
@@ -28,6 +28,7 @@ public class Hw1Activity extends Activity implements View.OnClickListener {
                 changeColor();
             }
         });
+
         textView2.setOnClickListener(textView2ClickListener);
     }
 

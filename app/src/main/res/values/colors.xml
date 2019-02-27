@@ -8,4 +8,7 @@
     <color name="colorBlack">#000000</color>
     <color name="colorGray">#A5A5A5</color>
     <color name="colorPurple">#EDB8FF</color>
+    <color name="colorBlueGray">#7AA1B6</color>
+    <color name="colorRed">#F00428</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>

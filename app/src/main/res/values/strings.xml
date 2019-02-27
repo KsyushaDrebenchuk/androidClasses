@@ -3,5 +3,6 @@
     <string name="textView1">CHICKEN</string>
     <string name="textView2">EGG</string>
     <string name="button">PUSH</string>
-
+    <string name="button_dz1">ДЗ1</string>
+    <string name="button_dz2">ДЗ2</string>
 </resources>
