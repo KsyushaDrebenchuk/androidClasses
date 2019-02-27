@@ -1,4 +1,4 @@
-package by.itacademy.androidclasses.hw1;
+package by.itacademy.androidclasses.dz1;
 
 import by.itacademy.androidclasses.R;
 
