@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AndroidClasses</string>
+    <string name="textView1">CHICKEN</string>
+    <string name="textView2">EGG</string>
+    <string name="button">PUSH</string>
 
 </resources>
