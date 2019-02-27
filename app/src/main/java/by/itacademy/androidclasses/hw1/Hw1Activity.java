@@ -10,21 +10,25 @@ import android.widget.TextView;
 
 public class Hw1Activity extends Activity implements View.OnClickListener {
 
+    private TextView textView1;
+    private TextView textView2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hw1);
 
-        findViewById(R.id.textView1).setOnClickListener(new View.OnClickListener() {
+        textView1 = findViewById(R.id.textView1);
+        textView2 = findViewById(R.id.textView2);
 
+        textView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 changeText();
                 changeColor();
             }
         });
-
-        findViewById(R.id.textView2).setOnClickListener(textView2ClickListener);
+        textView2.setOnClickListener(textView2ClickListener);
     }
 
     @Override
@@ -42,8 +46,6 @@ public class Hw1Activity extends Activity implements View.OnClickListener {
     };
 
     public void changeColor() {
-        TextView textView1 = findViewById(R.id.textView1);
-        TextView textView2 = findViewById(R.id.textView2);
         ColorDrawable cd1 = (ColorDrawable) textView1.getBackground();
         ColorDrawable cd2 = (ColorDrawable) textView2.getBackground();
         int colorCode1 = cd1.getColor();
@@ -53,8 +55,6 @@ public class Hw1Activity extends Activity implements View.OnClickListener {
     }
 
     public void changeText() {
-        TextView textView1 = findViewById(R.id.textView1);
-        TextView textView2 = findViewById(R.id.textView2);
         CharSequence text1 = textView1.getText();
         CharSequence text2 = textView2.getText();
         textView2.setText(text1);
