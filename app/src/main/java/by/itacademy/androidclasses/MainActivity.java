@@ -15,10 +15,9 @@ public class MainActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
-    public void Click(View v) {
+    public void click(View v) {
         switch (v.getId()) {
             case R.id.button_dz1: {
                 startActivity(new Intent(MainActivity.this, Dz1Activity.class));
