@@ -12,12 +12,19 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".hw1.Hw1Activity">
+        <activity android:name="by.itacademy.androidclasses.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name="by.itacademy.androidclasses.dz1.Dz1Activity"
+            android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
+
+        <activity
+            android:name="by.itacademy.androidclasses.dz2.Dz2Activity"
+            android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
+    </application>
 </manifest>
