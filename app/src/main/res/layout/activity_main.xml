@@ -10,7 +10,7 @@
         android:id="@+id/button_dz1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Click"
+        android:onClick="click"
         android:text="@string/button_dz1" />
 
     <Button
@@ -18,6 +18,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:onClick="Click"
+        android:onClick="click"
         android:text="@string/button_dz2" />
 </LinearLayout>
