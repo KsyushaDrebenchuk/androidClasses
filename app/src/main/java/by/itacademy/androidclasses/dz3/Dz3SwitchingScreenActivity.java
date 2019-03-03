@@ -23,7 +23,6 @@ public class Dz3SwitchingScreenActivity extends Activity {
         buttonOnClick(buttonToScreenDesign, Dz3ScreenDesign.class);
     }
 
-
     public void buttonOnClick(Button button, final Class clazz) {
         View.OnClickListener buttonClickListener = new View.OnClickListener() {
             @Override

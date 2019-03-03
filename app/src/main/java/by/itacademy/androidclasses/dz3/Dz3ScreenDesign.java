@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import by.itacademy.androidclasses.R;
 
 public class Dz3ScreenDesign extends Activity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
