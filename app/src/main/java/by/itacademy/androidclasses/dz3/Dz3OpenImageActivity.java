@@ -13,6 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import androidx.annotation.Nullable;
 import by.itacademy.androidclasses.R;
+import jp.wasabeef.picasso.transformations.CropCircleTransformation;
 
 public class Dz3OpenImageActivity extends Activity implements Callback {
 
@@ -31,7 +32,7 @@ public class Dz3OpenImageActivity extends Activity implements Callback {
 
         Button buttonUploadImage = findViewById(R.id.buttonUploadImage);
 
-        editText.setText("https://images.wallpaperscraft.ru/image/popugaj_ara_ptitsa_klyuv_106955_800x600.jpg");
+        editText.setText("https://pbs.twimg.com/media/DJRD406XgAA0Avp.jpg");
 
         buttonUploadImage.setOnClickListener(buttonUploadImageClickListener);
     }
@@ -48,7 +49,7 @@ public class Dz3OpenImageActivity extends Activity implements Callback {
     private synchronized void loadImage(String pictureLink) {
         Picasso.get()
                 .load(pictureLink)
-                .transform(new Dz3ConvertToCircle(300))
+                .transform(new CropCircleTransformation())
                 .into(imageView, this);
     }
 
