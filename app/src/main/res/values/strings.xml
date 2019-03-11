@@ -2,7 +2,19 @@
     <string name="app_name">AndroidClasses</string>
     <string name="textView1">CHICKEN</string>
     <string name="textView2">EGG</string>
+
     <string name="button">PUSH</string>
     <string name="button_dz1">ДЗ1</string>
     <string name="button_dz2">ДЗ2</string>
+
+    <string name="button_dz3">ДЗ3</string>
+    <string name="buttonDz3_toFindImage">Посмотреть картинку</string>
+    <string name="buttonDz3_toScreenDesign">Посмотреть экран логина</string>
+    <string name="editText_URL_ofImage">Введите ссылку на картинку</string>
+    <string name="button_uploadImage">Загрузить картинку</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="forgot_text"><u>Forgot your username/password?</u></string>
 </resources>

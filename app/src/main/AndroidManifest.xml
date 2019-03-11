@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="by.itacademy.androidclasses">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,5 +28,17 @@
         <activity
             android:name="by.itacademy.androidclasses.dz2.Dz2Activity"
             android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
+
+        <activity
+            android:name="by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity"
+            android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
+
+        <activity
+            android:name="by.itacademy.androidclasses.dz3.Dz3OpenImageActivity"
+            android:parentActivityName="by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity" />
+
+        <activity
+            android:name="by.itacademy.androidclasses.dz3.Dz3ScreenDesign"
+            android:parentActivityName="by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity" />
     </application>
 </manifest>
