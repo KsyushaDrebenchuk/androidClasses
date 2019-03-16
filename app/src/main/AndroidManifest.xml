@@ -26,5 +26,9 @@
         <activity
             android:name="by.itacademy.androidclasses.dz2.Dz2Activity"
             android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
+
+        <activity
+            android:name="by.itacademy.androidclasses.dz4.Dz4Activity"
+            android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
     </application>
 </manifest>
