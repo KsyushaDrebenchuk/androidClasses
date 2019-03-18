@@ -9,6 +9,8 @@ import androidx.annotation.Nullable;
 import by.itacademy.androidclasses.dz1.Dz1Activity;
 import by.itacademy.androidclasses.dz2.Dz2Activity;
 import by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity;
+import by.itacademy.androidclasses.dz4.Dz4Activity;
+
 
 public class MainActivity extends Activity {
 
@@ -32,6 +34,11 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, Dz3SwitchingScreenActivity.class));
                 break;
             }
+            case R.id.button_dz4: {
+                Intent intent = new Intent(MainActivity.this, Dz4Activity.class);
+                startActivityForResult(intent, 1);
+                overridePendingTransition(R.anim.translate1, R.anim.translate2);
+                break;
         }
     }
 }

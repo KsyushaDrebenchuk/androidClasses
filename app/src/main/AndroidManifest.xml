@@ -32,7 +32,7 @@
         <activity
             android:name="by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity"
             android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
-
+      
         <activity
             android:name="by.itacademy.androidclasses.dz3.Dz3OpenImageActivity"
             android:parentActivityName="by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity" />
@@ -40,5 +40,9 @@
         <activity
             android:name="by.itacademy.androidclasses.dz3.Dz3ScreenDesign"
             android:parentActivityName="by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity" />
+      
+      <activity
+            android:name="by.itacademy.androidclasses.dz4.Dz4Activity"
+            android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
     </application>
 </manifest>

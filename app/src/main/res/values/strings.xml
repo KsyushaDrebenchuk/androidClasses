@@ -17,4 +17,6 @@
     <string name="log_in">LOG IN</string>
     <string name="create_account">CREATE ACCOUNT</string>
     <string name="forgot_text"><u>Forgot your username/password?</u></string>
+
+    <string name="button_dz4">ДЗ4</string>
 </resources>

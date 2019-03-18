@@ -28,4 +28,12 @@
         android:layout_marginTop="10dp"
         android:onClick="click"
         android:text="@string/button_dz3" />
+
+    <Button
+        android:id="@+id/button_dz4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="click"
+        android:text="@string/button_dz4" />
 </LinearLayout>

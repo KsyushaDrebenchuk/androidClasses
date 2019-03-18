@@ -12,9 +12,35 @@
     <color name="colorBlueGray">#7AA1B6</color>
     <color name="colorRed">#F00428</color>
     <color name="colorWhite">#FFFFFF</color>
+
     <color name="loginEditTextBg">#36ECECEC</color>
     <color name="color_button_login">#3BA3BD</color>
     <color name="color_buttonPressed_login">#287081</color>
     <color name="color_create_account">#D3B48A</color>
     <color name="color_create_accountPressed">#9C8666</color>
+
+    <color name="colorCanvas">#F9FFC6</color>
+    <color name="colorClock">#54328A</color>
+
+    <array name="colorsOfDiagram">
+        <item name="color1">#FF9191</item>
+        <item name="color2">#C5A6FF</item>
+        <item name="color3">#FF528D</item>
+        <item name="color4">#819BE7</item>
+        <item name="color5">#B3ECA3</item>
+        <item name="color6">#BC55C0</item>
+        <item name="color7">#EE8E62</item>
+        <item name="color8">#EE508B</item>
+        <item name="color10">#2DBCF1</item>
+        <item name="color11">#4EAF48</item>
+        <item name="color12">#FF73E8</item>
+        <item name="color13">#B4B961</item>
+        <item name="color14">#EC4C4C</item>
+        <item name="color15">#CE38A3</item>
+        <item name="color16">#28B89C</item>
+        <item name="color17">#64E2E2</item>
+        <item name="color18">#9851B6</item>
+        <item name="color19">#61A773</item>
+        <item name="color20">#E78288</item>
+    </array>
 </resources>
