@@ -32,8 +32,6 @@ public class Dz3OpenImageActivity extends Activity implements Callback {
 
         Button buttonUploadImage = findViewById(R.id.buttonUploadImage);
 
-        editText.setText("https://pbs.twimg.com/media/DJRD406XgAA0Avp.jpg");
-
         buttonUploadImage.setOnClickListener(buttonUploadImageClickListener);
     }
 

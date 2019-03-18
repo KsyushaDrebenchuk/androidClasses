@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
                 startActivityForResult(intent, 1);
                 overridePendingTransition(R.anim.translate1, R.anim.translate2);
                 break;
+            }
         }
     }
 }
