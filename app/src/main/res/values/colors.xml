@@ -43,4 +43,6 @@
         <item name="color19">#61A773</item>
         <item name="color20">#E78288</item>
     </array>
+
+    <color name="colorBackgroundWifiOn">#1F82D1</color>
 </resources>

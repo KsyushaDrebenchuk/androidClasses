@@ -19,4 +19,8 @@
     <string name="forgot_text"><u>Forgot your username/password?</u></string>
 
     <string name="button_dz4">ДЗ4</string>
+
+    <string name="button_dz5">ДЗ5</string>
+    <string name="textViewOnWifi">WIFI ON</string>
+    <string name="textViewOffWifi">WIFI OFF</string>
 </resources>
