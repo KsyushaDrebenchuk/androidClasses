@@ -43,4 +43,10 @@
         <item name="color19">#61A773</item>
         <item name="color20">#E78288</item>
     </array>
+
+    <color name="colorButtonRound">#E91E63</color>
+    <color name="colorBackgroundEditActivity">#F3F5F5</color>
+    <color name="colorButtonEdit">#E9F864</color>
+    <color name="colorButtonDelete">#FD6767</color>
+    <color name="colorEditText">#DFDEDE</color>
 </resources>

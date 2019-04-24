@@ -10,6 +10,7 @@ import by.itacademy.androidclasses.dz1.Dz1Activity;
 import by.itacademy.androidclasses.dz2.Dz2Activity;
 import by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity;
 import by.itacademy.androidclasses.dz4.Dz4Activity;
+import by.itacademy.androidclasses.dz6.Dz6Activity;
 
 
 public class MainActivity extends Activity {
@@ -38,6 +39,10 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent(MainActivity.this, Dz4Activity.class);
                 startActivityForResult(intent, 1);
                 overridePendingTransition(R.anim.translate1, R.anim.translate2);
+                break;
+            }
+            case R.id.button_dz6: {
+                startActivity(new Intent(MainActivity.this, Dz6Activity.class));
                 break;
             }
         }

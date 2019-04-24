@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundEditActivity">
+
+    <ImageView
+        android:id="@+id/imageViewProfilePhoto"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/editTextUrlPhoto"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:hint="@string/editTextPhotoUrl"
+        android:background="@color/colorEditText"/>
+
+    <EditText
+        android:id="@+id/editTextStudentName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="@string/editTextName"
+        android:background="@color/colorEditText"/>
+
+    <EditText
+        android:id="@+id/editTextStudentSurname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="@string/editTextLastName"
+        android:background="@color/colorEditText"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/buttonsEditDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp">
+
+
+        <Button
+            android:id="@+id/buttonEditProfile"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="@string/buttonEditProfile"
+            android:textSize="30sp"
+            android:background="@color/colorButtonEdit"/>
+
+        <Button
+            android:id="@+id/buttonDeleteProfile"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/buttonDeleteProfile"
+            android:textSize="30sp"
+            android:background="@color/colorButtonDelete"/>
+    </LinearLayout>
+</LinearLayout>

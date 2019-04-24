@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundEditActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextAddUrlPhoto"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorEditText"
+        android:hint="@string/editTextPhotoUrl" />
+
+    <EditText
+        android:id="@+id/editTextAddStudentName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorEditText"
+        android:hint="@string/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextAddStudentSurname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorEditText"
+        android:hint="@string/editTextLastName" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonSaveProfile"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@color/colorGreen"
+        android:text="@string/buttonSaveProfile"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

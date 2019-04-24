@@ -19,4 +19,13 @@
     <string name="forgot_text"><u>Forgot your username/password?</u></string>
 
     <string name="button_dz4">ДЗ4</string>
+
+    <string name="button_dz6">ДЗ6</string>
+    <string name="buttonEditProfile">EDIT</string>
+    <string name="buttonDeleteProfile">DELETE</string>
+    <string name="buttonSaveProfile">SAVE</string>
+    <string name="editTextPhotoUrl">Photo URL</string>
+    <string name="editTextName">Name</string>
+    <string name="editTextLastName">Last name</string>
+    <string name="editTextSearch">Search</string>
 </resources>
