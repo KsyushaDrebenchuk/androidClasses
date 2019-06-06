@@ -49,4 +49,5 @@
     <color name="colorButtonEdit">#E9F864</color>
     <color name="colorButtonDelete">#FD6767</color>
     <color name="colorEditText">#DFDEDE</color>
+    <color name="colorBackgroundWifiOn">#1F82D1</color>
 </resources>

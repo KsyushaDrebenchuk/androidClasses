@@ -11,7 +11,7 @@ import by.itacademy.androidclasses.dz2.Dz2Activity;
 import by.itacademy.androidclasses.dz3.Dz3SwitchingScreenActivity;
 import by.itacademy.androidclasses.dz4.Dz4Activity;
 import by.itacademy.androidclasses.dz6.Dz6Activity;
-
+import by.itacademy.androidclasses.dz5.Dz5Activity;
 
 public class MainActivity extends Activity {
 
@@ -43,6 +43,10 @@ public class MainActivity extends Activity {
             }
             case R.id.button_dz6: {
                 startActivity(new Intent(MainActivity.this, Dz6Activity.class));
+                break;
+            }
+            case R.id.button_dz5: {
+                startActivity(new Intent(MainActivity.this, Dz5Activity.class));
                 break;
             }
         }

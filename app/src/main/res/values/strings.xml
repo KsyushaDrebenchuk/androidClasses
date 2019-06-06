@@ -28,4 +28,8 @@
     <string name="editTextName">Name</string>
     <string name="editTextLastName">Last name</string>
     <string name="editTextSearch">Search</string>
+
+    <string name="button_dz5">ДЗ5</string>
+    <string name="textViewOnWifi">WIFI ON</string>
+    <string name="textViewOffWifi">WIFI OFF</string>
 </resources>
