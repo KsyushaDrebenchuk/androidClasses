@@ -49,12 +49,5 @@
             android:name="by.itacademy.androidclasses.dz6.Dz6Activity"
             android:parentActivityName="by.itacademy.androidclasses.MainActivity" />
 
-        <activity
-            android:name="by.itacademy.androidclasses.dz6.Dz6ActivityEdit"
-            android:parentActivityName="by.itacademy.androidclasses.dz6.Dz6Activity" />
-
-        <activity
-            android:name="by.itacademy.androidclasses.dz6.Dz6ActivityAddStudent"
-            android:parentActivityName="by.itacademy.androidclasses.dz6.Dz6Activity" />
     </application>
 </manifest>

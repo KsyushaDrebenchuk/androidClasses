@@ -39,12 +39,11 @@
 
     <Button
         android:id="@+id/buttonSaveProfile"
-        android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
         android:background="@color/colorGreen"
         android:text="@string/buttonSaveProfile"
-        android:textSize="30sp"
-        android:layout_marginBottom="20dp"/>
-
+        android:textSize="30sp" />
 </LinearLayout>

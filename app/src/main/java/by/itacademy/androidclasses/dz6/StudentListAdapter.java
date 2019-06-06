@@ -6,11 +6,12 @@ import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 import by.itacademy.androidclasses.R;
 
 public class StudentListAdapter extends RecyclerView.Adapter<StudentListViewHolder> implements Filterable {
@@ -43,7 +44,11 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListViewHold
             public void onClick(View v) {
                 int position = viewHolder.getAdapterPosition();
                 if (listener != null) {
-                    listener.onItemClick(studentListFiltered.get(position), position);
+                    if (studentListFiltered == null) {
+                        listener.onItemClick(studentList.get(position), position);
+                    } else {
+                        listener.onItemClick(studentListFiltered.get(position), position);
+                    }
                 }
             }
         });
@@ -52,7 +57,7 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListViewHold
 
     @Override
     public void onBindViewHolder(@NonNull StudentListViewHolder holder, int position) {
-        if (studentListFiltered == null){
+        if (studentListFiltered == null) {
             holder.bind(studentList.get(position), position);
         } else {
             holder.bind(studentListFiltered.get(position), position);
@@ -61,7 +66,7 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListViewHold
 
     @Override
     public int getItemCount() {
-        if (studentListFiltered == null){
+        if (studentListFiltered == null) {
             return studentList.size();
         } else {
             return studentListFiltered.size();

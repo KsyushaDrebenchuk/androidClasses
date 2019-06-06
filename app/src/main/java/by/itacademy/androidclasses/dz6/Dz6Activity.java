@@ -1,83 +1,104 @@
 package by.itacademy.androidclasses.dz6;
 
-import android.app.Activity;
-import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.View;
-import android.widget.EditText;
-
-import java.util.List;
 
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import by.itacademy.androidclasses.R;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
-public class Dz6Activity extends Activity {
+import by.itacademy.androidclasses.R;
+import by.itacademy.androidclasses.dz6.fragments.AddStudentFragment;
+import by.itacademy.androidclasses.dz6.fragments.EditFragment;
+import by.itacademy.androidclasses.dz6.fragments.ListOfStudentsFragment;
+
+public class Dz6Activity
+        extends AppCompatActivity
+        implements ListOfStudentsFragment.OnStudentSelectedListener,
+        ListOfStudentsFragment.ButtonAddStudentOnClick,
+        EditFragment.OnButtonClickListener,
+        AddStudentFragment.OnButtonClickListener {
 
     public static final String STUDENT = "Student";
     public static final String STUDENT_POSITION = "Position";
-    private StudentListAdapter adapter = new StudentListAdapter();
-    private List<Student> students = StudentList.getInstance().getStudentList();
+
+    private ListOfStudentsFragment studentsFragment = new ListOfStudentsFragment();
+    private EditFragment editFragment;
+    private AddStudentFragment addFragment = new AddStudentFragment();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dz6);
 
-        ButtonView buttonAddStudent = findViewById(R.id.buttonAddStudent);
+        if (savedInstanceState == null) {
 
-        buttonAddStudent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Dz6Activity.this, Dz6ActivityAddStudent.class));
-            }
-        });
-
-        RecyclerView recyclerView = findViewById(R.id.recycleView);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
-
-        adapter.setList(students);
-        adapter.setListener(new StudentListAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(Student student, int position) {
-                Intent intent = new Intent(Dz6Activity.this, Dz6ActivityEdit.class);
-                intent.putExtra(STUDENT, student);
-                intent.putExtra(STUDENT_POSITION, position);
-                startActivity(intent);
-            }
-        });
-        recyclerView.setAdapter(adapter);
-
-        EditText editTextSearch = findViewById(R.id.editTextSearch);
-        editTextSearch.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                adapter.getFilter().filter(editable);
-            }
-        });
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.container_1, studentsFragment, "students_fragment")
+                    .commit();
+        }
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        adapter.notifyDataSetChanged();
+    public void onItemSelected(int position, Student student) {
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+            editFragment = new EditFragment();
+
+            Bundle args = new Bundle();
+            args.putParcelable(STUDENT, student);
+            args.putInt(STUDENT_POSITION, position);
+            editFragment.setArguments(args);
+
+            fragmentTransaction.replace(R.id.container_1, editFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        } else if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+            editFragment = new EditFragment();
+
+            Bundle args = new Bundle();
+            args.putParcelable(STUDENT, student);
+            args.putInt(STUDENT_POSITION, position);
+            editFragment.setArguments(args);
+
+            fragmentTransaction.replace(R.id.container_2, editFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        adapter.notifyDataSetChanged();
+    public void buttonAddStudentOnClick() {
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+            editFragment = new EditFragment();
+
+            fragmentTransaction.replace(R.id.container_1, addFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        } else if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+            editFragment = new EditFragment();
+
+            fragmentTransaction.replace(R.id.container_2, addFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
+    }
+
+    @Override
+    public void onButtonSelected() {
+        ListOfStudentsFragment studentsFragment =
+                (ListOfStudentsFragment) getSupportFragmentManager().findFragmentByTag("students_fragment");
+
+        if (studentsFragment != null) {
+            studentsFragment.notifyAdapterAboutChanges();
+        }
     }
 }
