@@ -44,5 +44,10 @@
         <item name="color20">#E78288</item>
     </array>
 
+    <color name="colorButtonRound">#E91E63</color>
+    <color name="colorBackgroundEditActivity">#F3F5F5</color>
+    <color name="colorButtonEdit">#E9F864</color>
+    <color name="colorButtonDelete">#FD6767</color>
+    <color name="colorEditText">#DFDEDE</color>
     <color name="colorBackgroundWifiOn">#1F82D1</color>
 </resources>
